@@ -26,10 +26,15 @@
 
             <section>
                <h2>Filmes e séries</h2>
-               <div>
-                
-                <img src="https://www.youtube.com/watch?v=xbqNb2PFKKA" />
-               
+               <div class="categoria-videos" >
+                 <a href="https://www.youtube.com/watch?v=HomRcxrJISI">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/1/1b/The_Incredible_Hulk.jpg/250px-The_Incredible_Hulk.jpg"/>
+                <a href="https://www.youtube.com/watch?v=ldhFSlrXHI4">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/6/68/The_Green_Lantern_poster.jpg"/>
+                <a href="https://www.youtube.com/watch?v=cTbSsUbwfYI">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/5/58/Star_Wars_Epis%C3%B3dio_III_A_Vingan%C3%A7a_dos_Sith.jpg"/>
+                 </a>
+            </a>
                </div>
             </section>
 </body>
@@ -62,4 +67,12 @@ h1{
 }
 p {
     font-size: 20px;
+}
+img {
+    height: 200px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
 }
