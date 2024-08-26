@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht-device-withd,  initial-scale=1.0">
+<title>Caçada do dragão</title>
+</head>
+<body>
+    <main>
+        <div>
+        <p>iniciamos nossa aventura em um mundo magico em busca de caçar o dragao, primeiramente onde devemos ir</p>
+        <button class="bnt-proximo" data-proximo="1">taverna do zé<
+        </div>    
+    </main>    
+
+</body>
+</html>    
+
