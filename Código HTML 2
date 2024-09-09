@@ -11,17 +11,18 @@
 </head>
 <body>
     <main>
-        <div class="passo" id="passo-0">
-        <p>iniciamos nossa aventura em um mundo magico em busca de caçar o dragao, primeiramente onde devemos ir</p>
+        <div class="passo ativo" id="passo-0">    
+        <p>iniciamos nossa aventura em um mundo magico em busca de caçar o dragao, primeiramente onde devemos ir?</p>
         <button class="bnt-proximo" data-proximo="1">taverna do zé</button>
         <button class="bnt-proximo" data-proximo="2">Floresta das trevas</button>
         </div>  
         <div class="passo" id="passo-1">
-        <p>Você vai até a taverna do zé em busca de informações, o barmen o informa dizendo que o dragão está em uma caverna, ele não sabe em qual está exatamente, mas diz que está em uma da duas cavernas ditas</p>
+        <p>Você vai até a taverna do zé em busca de informações, o barmen o informa dizendo que o dragão está em uma caverna, ele não sabe em qual está exatamente, mas diz que está em uma da duas cavernas ditas, em qual você vai?</p>
          <button class="bnt-proximo" data-proximo="3">Caverna Sombria</button>
          <button class="bnt-proximo" data-proximo="2">Caverna de Fogo</button>
             </div>    
-    </main>    
+    </main>   
+    <script src="script.js"></script> 
     
 </body>
 </html>
@@ -43,3 +44,23 @@ button {
     font-family: "New Amsterdam", sans-serif;
 }
 
+.passo {
+    display: none;
+
+}
+.passo.ativo {
+    display: block;
+}
+
+script,js
+const avanca = document.querySelectorAll('.btn-proximo');
+
+avanca.forEach(button => {
+    button.addEventListener('click', function(){
+        const atual = document.querySelector('.ativo');
+        const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
+        
+        atual.classList.remove('.ativo');
+        document.getElementById(proximoPasso).classList.add('ativo');
+    })
+})
