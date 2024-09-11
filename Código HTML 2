@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <title>Caça do Dragão</title>
-</head>
-<body>
-    <main>
-        <div class="passo ativo" id="passo-0"> 
-        <img src="cenario-passo0.jpeg" alt="">      
-        <p>iniciamos nossa aventura em um mundo magico em busca de caçar o dragao, primeiramente onde devemos ir?</p>
-        <button class="bnt-proximo" data-proximo="1">taverna do zé</button>
-        <button class="bnt-proximo" data-proximo="2">Floresta negra</button>
-        </div>  
-        <div class="passo" id="passo-1">
-        <p>Você vai até a taverna do zé em busca de informações, o barmen o informa dizendo que o dragão está em uma caverna, ele não sabe em qual está exatamente, mas diz que está em uma da duas cavernas ditas, em qual você vai?</p>
-         <button class="bnt-proximo" data-proximo="3">Caverna Sombria</button>
-         <button class="bnt-proximo" data-proximo="4">Desistir da aventura</button>
-            </div>
-            <div class="passo" id="passo-2">
-            <p>você vai ate a FLoresta negra em busca do dragäo, no caminha você encontra um ser misterioso te chamando a atencäo, deve-se confiar</p>
-            <button class="bnt-proximo" data-proximo="5">confiar</button>
-            <button class="bnt-proximo" data-proximo="6">Näo confiar</button>
-            </div>
-            
-    </main>   
-    <script src="script.js"></script> 
-    
-</body>
 </html>
-
 CSS
 body {
     background-color: #FF6400;
