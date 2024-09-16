@@ -1,4 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <title>Caça ao Dragão</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-01.jpeg" alt="">
+            <p>você começa sua aventura, voce precisa de informações para saber onde está o dragão, aonde voce vai para obter informações?</p>
+            <button class="btn-proximo" data-proximo="1">Taverna</button>
+            <button class="btn-proximo" data-proximo="2">Floresta negra</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Voce vai até a taverna e pergunta ao barmen, ele te dá informaçõessobre o dragao e diz o local, voce vai até lá?</p>
+            <button class="btn-proximo" data-proximo="3">Ir até o local</button>
+            <button class="btn-proximo" data-proximo="4">Desistir da aventura</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>na floresta negra, voce encontra um homem misterioso, ele te diz a localização do dragao e pede para voce levar uma poção mágica para levar com voce para usar na luta, levar ou não levar?</p>
+            <button class="btn-proximo" data-proximo="5">Levar</button>
+            <button class="btn-proximo" data-proximo="6">Não levar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
+                pista está no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
 </html>
+
 CSS
 body {
     background-color: #FF6400;
@@ -38,8 +88,8 @@ avanca.forEach(button => {
     button.addEventListener('click', function(){
         const atual = document.querySelector('.ativo');
         const proximoPasso = 'passo-' + this.getAttribute('data-proximo');
-        
-        atual.classList.remove('.ativo');
+
+        atual.classList.remove('ativo');
         document.getElementById(proximoPasso).classList.add('ativo');
     })
 })
